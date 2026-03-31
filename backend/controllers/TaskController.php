@@ -54,6 +54,8 @@ class TaskController
 
             $tasks = $this->task->getAll($status, $priority);
             Response::success($tasks);
+        } catch (ResponseException $e) {
+            throw $e;
         } catch (\Exception $e) {
             error_log('TaskController::index error: ' . $e->getMessage());
             Response::error('An unexpected error occurred', 500);
@@ -86,6 +88,8 @@ class TaskController
 
             $task = $this->task->create($data);
             Response::success($task, 201);
+        } catch (ResponseException $e) {
+            throw $e;
         } catch (\Exception $e) {
             error_log('TaskController::store error: ' . $e->getMessage());
             Response::error('An unexpected error occurred', 500);
@@ -102,6 +106,8 @@ class TaskController
         try {
             $stats = $this->task->getStats();
             Response::success($stats);
+        } catch (ResponseException $e) {
+            throw $e;
         } catch (\Exception $e) {
             error_log('TaskController::stats error: ' . $e->getMessage());
             Response::error('An unexpected error occurred', 500);
@@ -129,6 +135,8 @@ class TaskController
             }
 
             Response::success($task);
+        } catch (ResponseException $e) {
+            throw $e;
         } catch (\Exception $e) {
             error_log('TaskController::show error: ' . $e->getMessage());
             Response::error('An unexpected error occurred', 500);
@@ -193,6 +201,8 @@ class TaskController
 
             $task = $this->task->update($id, $data);
             Response::success($task);
+        } catch (ResponseException $e) {
+            throw $e;
         } catch (\Exception $e) {
             error_log('TaskController::update error: ' . $e->getMessage());
             Response::error('An unexpected error occurred', 500);
@@ -220,6 +230,8 @@ class TaskController
             }
 
             Response::success(['message' => 'Task deleted successfully']);
+        } catch (ResponseException $e) {
+            throw $e;
         } catch (\Exception $e) {
             error_log('TaskController::destroy error: ' . $e->getMessage());
             Response::error('An unexpected error occurred', 500);
@@ -254,6 +266,8 @@ class TaskController
             }
 
             Response::success($result);
+        } catch (ResponseException $e) {
+            throw $e;
         } catch (\Exception $e) {
             error_log('TaskController::complete error: ' . $e->getMessage());
             Response::error('An unexpected error occurred', 500);
