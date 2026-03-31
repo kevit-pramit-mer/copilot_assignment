@@ -10,7 +10,7 @@ const mockTasks = [
         description: 'First task',
         status: 'todo',
         priority: 'high',
-        created_at: '2026-03-01T10:00:00Z',
+        createdAt: '2026-03-01T10:00:00Z',
     },
     {
         id: '2',
@@ -18,7 +18,7 @@ const mockTasks = [
         description: '',
         status: 'in-progress',
         priority: 'medium',
-        created_at: '2026-03-02T12:00:00Z',
+        createdAt: '2026-03-02T12:00:00Z',
     },
     {
         id: '3',
@@ -26,7 +26,7 @@ const mockTasks = [
         description: null,
         status: 'done',
         priority: 'low',
-        created_at: null,
+        createdAt: null,
     },
 ];
 
