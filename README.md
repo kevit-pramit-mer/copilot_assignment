@@ -67,6 +67,7 @@ npx vitest run --coverage
 
 ### E2E Tests
 ```bash
+cd frontend
 npx playwright test
 ```
 
@@ -74,7 +75,7 @@ npx playwright test
 ```
 ├── backend/          # PHP REST API
 ├── frontend/         # React app (Vite)
-├── e2e/              # Playwright E2E tests
+│   └── e2e/          # Playwright E2E tests
 ├── AGENTS.md         # Project agent configuration
 ├── COPILOT-LOG.md    # GitHub Copilot usage log
 └── plan.md           # Build plan
