@@ -58,7 +58,7 @@ export default function TaskTable({ tasks, onEdit, onDelete, onComplete, actionL
                                 </td>
                                 <td><Badge type="priority" value={task.priority} /></td>
                                 <td><Badge type="status" value={task.status} /></td>
-                                <td className="cell-date">{formatDate(task.created_at)}</td>
+                                <td className="cell-date">{formatDate(task.createdAt)}</td>
                                 <td className="cell-actions">
                                     <button
                                         className="btn btn-sm btn-edit"

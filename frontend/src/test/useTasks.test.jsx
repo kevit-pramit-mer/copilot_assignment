@@ -8,7 +8,7 @@ vi.mock('../api/taskApi');
 
 const mockTask = {
     id: '1', title: 'Test Task', description: '', status: 'todo',
-    priority: 'medium', created_at: '2026-03-01T00:00:00Z', updated_at: '2026-03-01T00:00:00Z',
+    priority: 'medium', createdAt: '2026-03-01T00:00:00Z', updatedAt: '2026-03-01T00:00:00Z',
 };
 
 const mockStats = {
