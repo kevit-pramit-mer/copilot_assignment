@@ -105,6 +105,10 @@ body {
     font-size: 0.8rem;
 }
 
+.cell-actions .btn-sm {
+    margin-right: 5px;
+}
+
 .btn-edit {
     background: var(--color-primary);
     color: #fff;
@@ -363,7 +367,7 @@ body {
 }
 
 .cell-actions {
-    display: flex;
+    /* display: flex; */
     gap: 6px;
     white-space: nowrap;
     align-items: center;
