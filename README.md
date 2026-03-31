@@ -77,8 +77,7 @@ npx playwright test
 ├── frontend/         # React app (Vite)
 │   └── e2e/          # Playwright E2E tests
 ├── AGENTS.md         # Project agent configuration
-├── COPILOT-LOG.md    # GitHub Copilot usage log
-└── plan.md           # Build plan
+└── COPILOT-LOG.md    # GitHub Copilot usage log
 ```
 
 ## License
